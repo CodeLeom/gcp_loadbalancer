@@ -1,3 +1,7 @@
+NOTE: all this command are listed heirarchically.
+
+
+
 Create multiple web server instances
 
 To simulate serving from a cluster of machines, 
@@ -67,7 +71,7 @@ Network load balancing allows you to balance the load of your systems based on i
 create an L3 load balancer
 *************************************
 gcloud compute forwarding-rules create nginx-lb \
-         --region us-central1 \
+         --region (input your region here, removing the parenthesis) \ 
          --ports=80 \
          --target-pool nginx-pool
 ******************************************
